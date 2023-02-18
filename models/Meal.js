@@ -19,6 +19,6 @@ const mealSchema = new mongoose.Schema({
     timestamps: true,
   }
 );
-mealSchema.index({ name: "text", userId: "text" });
+
 module.exports = mongoose.model("Meal", mealSchema);
 
